@@ -1,26 +1,26 @@
-# Core API Framework
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-pydantic==2.11.7
+# Minimal requirements for deployment
+fastapi
+uvicorn[standard]
+pydantic
 
 # Document Processing
-PyMuPDF==1.23.26
-python-docx==1.1.0
-python-multipart==0.0.6
+PyMuPDF
+python-docx
+python-multipart
 
 # Machine Learning & Embeddings
-sentence-transformers==2.2.2
-torch==2.1.1
-faiss-cpu==1.11.0.post1
-numpy==2.3.2
+sentence-transformers
+torch
+faiss-cpu
+numpy
 
 # LLM Integration
-google-generativeai==0.8.3
+google-generativeai
 
 # Utilities
-python-dotenv==1.0.0
-requests==2.32.4
-aiofiles==23.2.1
+python-dotenv
+requests
+aiofiles
 
-# Heroku specific
-gunicorn==21.2.0
+# Deployment
+gunicorn
