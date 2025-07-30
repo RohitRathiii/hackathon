@@ -1,0 +1,19 @@
+# Ultra-minimal requirements for Railway
+fastapi==0.116.1
+uvicorn==0.35.0
+pydantic==2.11.7
+
+# Document Processing
+PyMuPDF==1.26.3
+python-multipart==0.0.20
+
+# Minimal ML (no sentence-transformers to avoid PyTorch)
+numpy==2.3.2
+scikit-learn==1.7.1
+
+# LLM Integration
+google-generativeai==0.8.5
+
+# Utilities
+python-dotenv==1.1.1
+requests==2.32.4

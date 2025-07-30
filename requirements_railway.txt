@@ -1,0 +1,27 @@
+# Minimal requirements for Railway deployment
+fastapi
+uvicorn[standard]
+pydantic
+
+# Document Processing
+PyMuPDF
+python-docx
+python-multipart
+
+# Lightweight ML Libraries (CPU-only, no CUDA)
+sentence-transformers
+torch --index-url https://download.pytorch.org/whl/cpu
+faiss-cpu
+numpy
+
+# LLM Integration
+google-generativeai
+
+# Utilities
+python-dotenv
+requests
+aiofiles
+nltk
+
+# Deployment
+gunicorn

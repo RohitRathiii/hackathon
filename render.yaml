@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: legal-bert-api
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run_api.py
+    envVars:
+      - key: GOOGLE_API_KEY
+        value: AIzaSyA3poDdpwsi-rrOnURaLE1Gd6v-uRZeH_Y
+      - key: API_BEARER_TOKEN
+        value: default-token
+      - key: TORCH_DEVICE
+        value: cpu
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: PORT
+        generateValue: true
+    healthCheckPath: /health

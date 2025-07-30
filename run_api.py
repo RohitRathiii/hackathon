@@ -38,13 +38,14 @@ def main():
     print()
     
     # Run the API
-    port = int(os.environ.get("PORT", 8004))  # Heroku provides PORT env var
+    port = int(os.environ.get("PORT", 8004))  # Railway provides PORT env var
     uvicorn.run(
         "src.final_api:app",
         host="0.0.0.0",
         port=port,
-        reload=False,  # Set to True for development
-        log_level="info"
+        reload=False,
+        log_level="info",
+        workers=1  # Single worker for Railway
     )
 
 if __name__ == "__main__":
